@@ -76,6 +76,7 @@ Only the X, Y, and Z columns are used. Other columns are ignored.
 ---
 
 ## Changelog
+- **v1.6.1**: Added clickable button to open GitHub ReadMe from inside Blender
 - **v1.6.0**: Added customizable column names for X, Y, and Z.
 - **v1.5.0**: Added label orientation, alignment, and vertical offset options.
 - **v1.4.0**: Improved reading of CSV with better whitespace handling.

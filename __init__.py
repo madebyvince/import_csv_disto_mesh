@@ -2,7 +2,7 @@
 bl_info = {
     "name": "Import Disto CSV to Mesh (Leica Disto Points)",
     "author": "Vince Horlait",
-    "version": (1, 6, 0),
+    "version": (1, 6, 1),
     "blender": (3, 0, 0),
     "location": "File > Import > Import CSV (Disto to Mesh)",
     "description": "Import Leica Disto CSV file with 3D points as vertices, with optional labels and customizable columns",
@@ -60,6 +60,19 @@ class ImportCSVAsMesh(Operator, ImportHelper):
     x_column_name: StringProperty(name="X Column Name", default="X [m]")
     y_column_name: StringProperty(name="Y Column Name", default="Y [m]")
     z_column_name: StringProperty(name="Z Column Name", default="Z [m]")
+
+    def draw(self, context):
+        layout = self.layout
+        layout.prop(self, "show_labels")
+        layout.prop(self, "label_size")
+        layout.prop(self, "label_orientation")
+        layout.prop(self, "label_alignment")
+        layout.prop(self, "label_offset_z")
+        layout.prop(self, "x_column_name")
+        layout.prop(self, "y_column_name")
+        layout.prop(self, "z_column_name")
+        layout.separator()
+        layout.operator("wm.url_open", text="📄 View Documentation (GitHub)").url = "https://github.com/madebyvince/import_csv_disto_mesh"
 
     def execute(self, context):
         verts = []

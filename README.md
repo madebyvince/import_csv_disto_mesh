@@ -1,5 +1,7 @@
 # Import Disto CSV to Mesh (Leica Disto Points) - Addon for Blender
 
+[![Download Latest Release](https://img.shields.io/github/v/release/madebyvince/import_csv_disto_mesh?label=Download%20Latest%20Release)](https://github.com/madebyvince/import_csv_disto_mesh/releases/latest)
+
 ## Description
 This Blender addon allows you to import a Leica Disto Transfer CSV file containing 3D coordinates (X, Y, Z) and generate a mesh made of vertices at the specified locations.
 The generated mesh will not have any edges or faces, only vertices.

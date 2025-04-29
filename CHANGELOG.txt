@@ -1,0 +1,7 @@
+Changelog for Import Disto CSV to Mesh (Leica Disto Points):
+
+- v1.6.0: Added customizable column names for X, Y, and Z.
+- v1.5.0: Added label orientation, alignment, and vertical offset options.
+- v1.4.0: Improved reading of CSV with better whitespace handling.
+- v1.3.0: Added basic label creation option.
+- v1.0.0: Initial version.

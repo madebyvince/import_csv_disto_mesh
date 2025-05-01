@@ -9,6 +9,8 @@ bl_info = {
     "category": "Import-Export",
 }
 
+# SPDX-License-Identifier: MIT
+
 import bpy
 import csv
 from bpy_extras.io_utils import ImportHelper
